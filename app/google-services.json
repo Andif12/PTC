@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "181527777256",
+    "project_id": "sisatuu-f79fb",
+    "storage_bucket": "sisatuu-f79fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181527777256:android:b1df53da18730fcc275e5d",
+        "android_client_info": {
+          "package_name": "com.example.sisatu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrQAIgkKR7VyDyj3xxMRA4sjD8WgfBDO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

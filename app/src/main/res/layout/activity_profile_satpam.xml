@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSatpamActivity"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/tombolkembali"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="122dp"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fpf"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:text="Nama Lengkap :"
+        android:padding="15dp"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/profile_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"/>
+
+    <TextView
+        android:id="@+id/idPegawai"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Id Pegawai :"
+        android:padding="15dp"
+        android:textAlignment="gravity"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/profile_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Email :"
+        android:padding="15dp"
+        android:textAlignment="gravity"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/profile_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPegawai"/>
+
+    <TextView
+        android:id="@+id/jabatan"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Jabatan :"
+        android:padding="15dp"
+        android:textAlignment="gravity"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/profile_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

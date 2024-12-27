@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/tombolkembali"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="168dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="122dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logobiru" />
+
+    <TextView
+        android:id="@+id/selamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:text="Selamat Datang!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:hint="Masukkan NIM/ID"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/antic_slab"
+        android:background="@drawable/rounded_shape"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selamat" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:hint="Masukkan Kata Sandi"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/antic_slab"
+        android:background="@drawable/rounded_shape"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="50dp"
+        android:text="MASUK"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/anton"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+    <TextView
+        android:id="@+id/BelumPunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="60dp"
+        android:text="Belum punya akun? "
+        android:textAlignment="center"
+        android:fontFamily="@font/black_han_sans"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_login"/>
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/black_han_sans"
+        android:text="Daftar"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/BelumPunyaAkun"
+        app:layout_constraintTop_toTopOf="@id/BelumPunyaAkun" />
+
+    <TextView
+        android:id="@+id/lupa"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/black_han_sans"
+        android:text="Lupa Kata Sandi? "
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

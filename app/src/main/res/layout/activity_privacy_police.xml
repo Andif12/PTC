@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPoliceActivity"
+    android:background="@color/gray">
+
+    <!-- Back Button -->
+    <TextView
+        android:id="@+id/tombolkembali"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textSize="20sp"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/tombolkembali"
+        app:layout_constraintTop_toTopOf="@id/tombolkembali" />
+
+    <!-- Scrollable Privacy Policy Content -->
+    <android.widget.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacy"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/privacypolice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4dp"
+            android:text="Kebijakan Privasi SiSatu\n\nKami di SiSatu (Sistem Identifikasi dan Surveillance untuk Tindakan Urgent) menghargai dan melindungi privasi civitas academica yang menggunakan sistem kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan layanan SiSatu.\n\nDengan menggunakan aplikasi SiSatu, Anda setuju dengan pengumpulan dan penggunaan informasi sebagaimana dijelaskan dalam Kebijakan Privasi ini.\n\nInformasi yang Kami Kumpulkan\nData Pribadi\nNama, email institusi, dan nomor telepon yang digunakan untuk akses layanan.\nInformasi peran di kampus (dosen, mahasiswa, atau staf).\n\nData CCTV\nRekaman video dari kamera pengawas di lingkungan kampus untuk analisis keamanan.\nGambar yang digunakan untuk mendeteksi aktivitas mencurigakan, orang tidak dikenal, atau barang tidak terawasi.\n\nData Aktivitas Sistem\nLog penggunaan aplikasi untuk pemantauan kinerja sistem.\nRiwayat notifikasi peringatan dini yang dikirimkan kepada pihak terkait.\n\nBagaimana Kami Menggunakan Informasi Anda\nKami menggunakan data yang dikumpulkan untuk:\n\nMeningkatkan keamanan di lingkungan kampus.\nMemberikan notifikasi peringatan dini kepada civitas academica terkait potensi ancaman.\nMenganalisis pola dan meningkatkan kemampuan deteksi sistem.\n\nPerlindungan Data Anda\nKami berkomitmen untuk melindungi data Anda dengan:\n\nEnkripsi Data: Semua data yang dikumpulkan dienkripsi untuk mencegah akses tidak sah.\nAkses Terbatas: Hanya pihak berwenang yang dapat mengakses data, seperti bagian keamanan kampus.\nPenyimpanan Aman: Data disimpan di server yang dilindungi oleh firewall dan sistem keamanan canggih.\n\nBerbagi Data dengan Pihak Ketiga\nKami tidak menjual atau membagikan data Anda kepada pihak ketiga di luar institusi kampus, kecuali:\n\nJika diwajibkan oleh hukum.\nUntuk mendukung penyelidikan keamanan yang sedang berlangsung.\n\nHak Anda\nSebagai pengguna SiSatu, Anda memiliki hak untuk:\n\nMengakses dan memperbarui informasi pribadi Anda.\nMeminta penghapusan data pribadi sesuai kebijakan kampus.\nMendapatkan informasi tentang bagaimana data Anda digunakan.\n\nPerubahan Kebijakan Privasi\nKami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu untuk mencerminkan perubahan teknologi atau kebijakan institusi. Perubahan akan diberitahukan melalui aplikasi atau email resmi kampus.\n\nHubungi Kami\nJika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, silakan hubungi:\n\nEmail: privacy@sisatu.com\nTelepon: +62-421-567-890\n\nTerima kasih telah mempercayai SiSatu untuk membantu menjaga keamanan dan kenyamanan di lingkungan kampus Anda."
+            android:textSize="14sp" />
+    </android.widget.ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

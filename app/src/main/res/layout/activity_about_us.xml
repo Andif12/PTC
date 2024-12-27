@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:background="@color/gray">
+
+    <!-- Back Button -->
+    <TextView
+        android:id="@+id/tombolkembali"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:textSize="20sp"
+        android:fontFamily="@font/antic_slab"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/tombolkembali"
+        app:layout_constraintTop_toTopOf="@id/tombolkembali" />
+
+    <!-- Scrollable Content -->
+    <android.widget.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Tentang Kami\n\nSelamat datang di SiSatu (Sistem Identifikasi dan Surveillance untuk Tindakan Urgent)! Kami adalah platform berbasis teknologi deteksi objek YOLO (You Only Look Once) yang dirancang untuk meningkatkan keamanan di lingkungan kampus, khususnya di ruang kelas.\n\nVersi Saat Ini: SiSatu versi 1.0.\n\nMisi Kami: menyediakan sistem pengawasan cerdas yang efektif untuk menciptakan lingkungan kampus yang aman, terorganisir, dan responsif terhadap situasi darurat.\n\nApa yang Kami Tawarkan?\n\nAnalisis Real-Time: Deteksi anomali seperti aktivitas mencurigakan, barang tidak terawasi, atau orang tidak dikenal melalui data CCTV secara langsung.\nPeringatan Dini: Mengirim notifikasi cepat kepada pihak terkait untuk respons yang lebih sigap.\nKeamanan &amp; Privasi: SiSatu memastikan keamanan data dengan memprioritaskan privasi pengguna.\n\nMengapa SiSatu?\n\nTeknologi cerdas yang presisi,\nRespon cepat terhadap ancaman,\ndan antarmuka yang ramah pengguna.\n\nHubungi Kami:\nEmail: support@sisatu.com,\nTelepon: +62-421-567-890.\n\nTerima kasih telah mempercayai SiSatu sebagai mitra keamanan kampus Anda."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+    </android.widget.ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

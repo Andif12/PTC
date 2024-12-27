@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SiSatu</string>
+
+    <string-array name="dropdown">
+        <item>Lihat Berdasarkan</item>
+        <item>Lihat Berdasarkan Tanggal</item>
+        <item>Lihat Berdasarkan Waktu</item>
+    </string-array>
+</resources>

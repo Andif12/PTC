@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrasiAsActivity"
+    android:background="@color/gray">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="122dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/regisas"
+        app:srcCompat="@drawable/logobiru"/>
+
+    <TextView
+        android:id="@+id/regisas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/anton"
+        android:text="Registrasi Sebagai"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mhs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+    <Button
+        android:id="@+id/btn_mhs"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:text="MAHASISWA"
+        android:fontFamily="@font/antic_slab"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/btn_satpam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regisas"/>
+
+    <Button
+        android:id="@+id/btn_satpam"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="PETUGAS KEAMANAN"
+        android:fontFamily="@font/antic_slab"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mhs"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
